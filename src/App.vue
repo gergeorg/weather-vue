@@ -1,5 +1,6 @@
 <script setup>
-const currentDate = new Date();
+import { ref } from "vue";
+const currentDate = ref(new Date().toLocaleString());
 </script>
 
 <template>
