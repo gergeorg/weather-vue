@@ -1,10 +1,21 @@
 <script setup>
-import { ref } from "vue";
-const currentDate = ref(new Date().toLocaleString());
+import Button from "./components/Button.vue";
 </script>
 
 <template>
-	<div>{{ currentDate }}</div>
+	<main class="main">
+		<Button>
+			<template #:icon>+</template>
+			<!-- # - короткая запись v-slot -->
+			Сохранить</Button
+		>
+	</main>
 </template>
 
-<style scoped></style>
+<style scoped>
+.main {
+	background-color: var(--color-bg-main);
+	padding: 60px 50px;
+	border-radius: 25px;
+}
+</style>
