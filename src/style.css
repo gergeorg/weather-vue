@@ -1,6 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --color-primary: #FFFFFF;
   --color-bg: #343D4B;
+  --color-text-placeholder: #3f4958;;
   --color-primary-inverted: #000000;
   --color-bg-card: #272E37;
   --color-bg-main: #222831;
@@ -15,7 +20,6 @@ body {
   display: grid;
   place-items: center;
   min-height: 100vh;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -26,4 +30,10 @@ body {
   font-style: normal;
   color: var(--color-primary);
   background-color: var(--color-bg);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

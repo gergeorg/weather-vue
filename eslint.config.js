@@ -5,6 +5,7 @@ import prettier from "eslint-config-prettier";
 export default [
 	js.configs.recommended,
 	...vue.configs["flat/recommended"],
+	standard,
 	prettier,
 	{
 		files: ["**/*.vue", "**/*.js"],
